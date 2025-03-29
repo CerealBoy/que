@@ -3,7 +3,7 @@ defmodule Que.Mixfile do
 
   @app     :que
   @name    "Que"
-  @version "0.10.1"
+  @version "0.11.0"
   @github  "https://github.com/sheharyarn/#{@app}"
 
 
@@ -21,7 +21,7 @@ defmodule Que.Mixfile do
       # Project
       app:          @app,
       version:      @version,
-      elixir:       "~> 1.4",
+      elixir:       "~> 1.18",
       description:  description(),
       package:      package(),
       deps:         deps(),
@@ -50,7 +50,7 @@ defmodule Que.Mixfile do
 
   defp deps do
     [
-      {:memento,  "~> 0.3.0"              },
+      {:memento,  "~> 0.4.1"              },
       {:ex_utils, "~> 0.1.6"              },
       {:ex_doc,   ">= 0.0.0", only: :docs },
       {:inch_ex,  ">= 0.0.0", only: :docs },
@@ -78,4 +78,3 @@ defmodule Que.Mixfile do
     ]
   end
 end
-
